@@ -2,7 +2,7 @@ const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const random = require('crypto');
-const admin = require('../helpers/admin');
+const admin = require('../helpers/admin').default;
 require('dotenv').config();
 
 //const clientSecret = process.env.LINE_LOGIN_CHANNEL_SECRET;
@@ -10,7 +10,6 @@ require('dotenv').config();
 // Create express instance
 const app = express();
 
-admin.app();
 console.log(admin);
 
 app.use(session({

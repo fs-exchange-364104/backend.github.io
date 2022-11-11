@@ -121,6 +121,16 @@ router.post('/login/callback', function (req, res, next) {
   }
 });
 
+router.post('/login/profile', function (req, res, next) {
+  const body = req.body;
+  return getLineProfile(body).then((body) => {
+    return res.status(200).json(body);
+  }).catch((err) => {
+    console.log(err);
+    return res.send(err);
+  });
+});
+
 router.post('/login/customtoken', function (req, res, next) {
   const body = req.body;
   return verifyToken(body).then((body) => {
@@ -128,11 +138,28 @@ router.post('/login/customtoken', function (req, res, next) {
   }).then((userRecord) => {
     return admin.auth().createCustomToken(userRecord.uid);
   }).then((customToken) => {
-    return res.status(200).send({ customToken });
+    const ret = {
+      customToken: customToken
+    };
+    return res.status(200).send(ret);
   }).catch((err) => {
     console.log(err);
     return res.send(err);
   });
+});
+
+router.post('/login/callback/savedb', function (req, res) {
+  const body = req.body;
+  return admin
+    .database()
+    .ref(`/users/${body.uid}`)
+    .update(body)
+    .then(() => {
+      res.status(200).send('ok');
+    })
+    .catch((err) => {
+      res.send(err);
+    });
 });
 
 module.exports = router;

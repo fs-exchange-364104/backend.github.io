@@ -62,7 +62,8 @@ module.exports = {
   */
   plugins: [
     { src: '~/plugins/vuetify.js', ssr: true },
-    { src: '~/plugins/firebase-client-init.js', ssr: false }
+    { src: '~/plugins/firebase-client-init.js', ssr: false },
+    { src: '~/plugins/axios.js', mode: 'client' }
   ],
 
   /*
@@ -84,11 +85,15 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    ['cookie-universal-nuxt', { parseJSON: true }],
     // Doc: https://http.nuxtjs.org
     '@nuxt/http',
+    '@nuxtjs/axios',
     '@nuxtjs/dotenv',
     '@nuxtjs/firebase'
   ],
+
+  axios: {},
 
   firebase: {
     config: {
@@ -135,6 +140,10 @@ module.exports = {
   */
   serverMiddleware: {
     '/api': '~/api'
+  },
+
+  router: {
+    middleware: ['ssr-cookie']
   },
 
   /*
