@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+html,
+body,
+template {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 0.993rem;
+  font-weight: 400;
+  word-spacing: 1px;
+  letter-spacing: .0175em;
+  text-decoration: none;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.t-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: .0175em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.white {
+	background-color: white !important;
+	color: #555555 !important;
+}
+
+.bg-white {
+	background-color: white !important;
+}
+
+.bg-light {
+  background-color: ghostwhite !important;
+}
+
+.light {
+  background-color: ghostwhite !important;
+  color: #555555 !important;
+}
+
+.light {
+  background-color: ghostwhite !important;
+  color: #555555 !important;
+}
+
+.light-text {
+	color: #555555;
+}
+
+.bd-inline {
+  border: 1px solid grey;
+}
+
+.center {
+	text-align: center !important;
+	vertical-align: baseline !important;
+}
+
+.user-bg {
+	background-image: url('https://res.cloudinary.com/dzre5cq2d/image/upload/v1659030021/public/profile_oty4xu.jpg');
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+.bg-inline {
+  background-image: url('https://res.cloudinary.com/dzre5cq2d/image/upload/v1659035592/public/catstop_no0gwe.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.bg-block {
+  background-image: url('https://res.cloudinary.com/dzre5cq2d/image/upload/v1659671537/public/cats300x1600-3_bnghul.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.bg-bottom {
+  background-image: url('https://res.cloudinary.com/dzre5cq2d/image/upload/v1659035813/public/catsbottom_eiephv.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.btn-line {
+  width: 44px;
+  height: 44px;
+  background: url('https://firebasestorage.googleapis.com/v0/b/fs-exchange-364104.appspot.com/o/public%2Fline_88.png?alt=media&token=d8760a51-ec34-46bd-ade6-f11cd80cebdc');
+  background-size: 44px 44px;
+}
+
+.bg-75 {
+  background-image: url('https://res.cloudinary.com/dzre5cq2d/image/upload/v1659035813/public/catsbottom_eiephv.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.bg-image-dark {
+	background-image: url('https://res.cloudinary.com/dzre5cq2d/image/upload/v1659704392/public/bg011_yashbj.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-image-light {
+	background-image: url('https://res.cloudinary.com/dzre5cq2d/image/upload/v1659704392/public/bg-white2_wlcjq8.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+
+.hide {
+	display: none;
+}
+
+.medium {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: Roboto;
+  letter-spacing: .0178571429em;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.t-text {
+	font-size: 11px;
+}

@@ -12,14 +12,48 @@
   },
   "dependencies": {
     "@nuxt/http": "latest",
+    "@nuxtjs/axios": "^5.13.6",
+		"@nuxtjs/dotenv": "^1.4.1",
+		"@nuxtjs/firebase": "^8.2.2",
+		"dotenv": "^16.0.3",
     "express": "latest",
-    "nuxt": "latest"
+		"express-session": "^1.17.3",
+		"firebase": "^9.13.0",
+		"body-parser": "^1.20.1",
+    "nuxt": "latest",
+    "request-promise": "latest",
+		"async": "^3.2.4",
+		"cookie": "^0.5.0",
+		"dayjs": "^1.11.6",
+		"uuid": "^9.0.0",
+		"util": "^0.12.5",
+    "jwt-decode": "^3.1.2",
+    "jsonwebtoken": "^8.5.1",
+		"vue": "^2.7.13",
+		"vue-server-renderer": "^2.7.13",
+		"vue-template-compiler": "^2.7.13",
+		"vuetify": "^2.6.12"
   },
   "devDependencies": {
+		"@babel/eslint-parser": "^7.19.1",
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
+		"@nuxtjs/vuetify": "^1.12.3",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.20.0",
-    "eslint-plugin-nuxt": "^2.0.0"
-  }
+    "eslint": "^8.24.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+		"eslint-plugin-vue": "^9.5.1",
+		"eslint-plugin-promise": "^6.1.1",
+		"eslint-plugin-json": "^3.1.0",
+		"eslint-plugin-import": "^2.26.0"
+  },
+	"author": {
+		"name": "Chonthicha Yaver",
+		"email": "admin@fs-exchange.com"
+	},
+	"licenses": [
+    {
+      "license": "(MIT OR Apache-2.0)"
+    }
+  ]
 }
